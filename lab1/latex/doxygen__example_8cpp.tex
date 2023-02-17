@@ -1,0 +1,89 @@
+\hypertarget{doxygen__example_8cpp}{}\doxysection{doxygen\+\_\+example.\+cpp File Reference}
+\label{doxygen__example_8cpp}\index{doxygen\_example.cpp@{doxygen\_example.cpp}}
+
+
+Illustrates doxygen-\/style comments for documenting a C++ program file and the functions in that file.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{doxygen__example_8cpp_aa458772cc2626c55fd05175eed25e968}{Do\+Something}} (int number\+Of\+Positions, char \&first\+Initial, string \&string\+Of\+Initials)
+\item 
+int \mbox{\hyperlink{doxygen__example_8cpp_a06a9d1de937e4549cf0b75a0154abd5f}{number\+Of\+Digits}} (int n)
+\item 
+\mbox{\Hypertarget{doxygen__example_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{doxygen__example_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Illustrates doxygen-\/style comments for documenting a C++ program file and the functions in that file. 
+
+\begin{DoxyAuthor}{Author}
+Lastname\+:\+Firstname\+:\+A00123456\+:cscxxxxx 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+Revision 1.\+1
+\end{DoxyVersion}
+If you want to add any further detailed description of what is in the file, then place it here (after the first statement) and it will appear in the detailed description section of the HTML output description for the file. \begin{DoxyDate}{Date}
+Monday, September 19, 2011 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{doxygen__example_8cpp_aa458772cc2626c55fd05175eed25e968}\label{doxygen__example_8cpp_aa458772cc2626c55fd05175eed25e968}} 
+\index{doxygen\_example.cpp@{doxygen\_example.cpp}!DoSomething@{DoSomething}}
+\index{DoSomething@{DoSomething}!doxygen\_example.cpp@{doxygen\_example.cpp}}
+\doxysubsubsection{\texorpdfstring{DoSomething()}{DoSomething()}}
+{\footnotesize\ttfamily void Do\+Something (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Positions,  }\item[{char \&}]{first\+Initial,  }\item[{string \&}]{string\+Of\+Initials }\end{DoxyParamCaption})}
+
+A single statement goes here to give a high-\/level description of the function, which is ended by the first period. Any further description of the function, such as this statement that comes after the first statement, will appear as part of the \char`\"{}detailed description\char`\"{} for this function. The brief description may also be repeated here immediately prior to the detailed description, but the configuration file for this example is currently set to disable that feature. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Positions} & The number of positions first\+Initial is to be moved forward. \\
+\hline
+{\em first\+Initial} & A character representing the first letter in a person\textquotesingle{}s first name (for example). \\
+\hline
+{\em string\+Of\+Initials} & A string in which all characters are the same. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+
+\begin{DoxyEnumerate}
+\item number\+Of\+Positions contains a positive integer.
+\item first\+Initial contains a printable character at least number\+Of\+Positions positions from the end of the printable character set. 
+\end{DoxyEnumerate}
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+
+\begin{DoxyEnumerate}
+\item first\+Initial contains the character number\+Of\+Positions to the right of its original value.
+\item string\+Of\+Initials contains a string of length number\+Of\+Positions in which each character is the original value of first\+Initial. 
+\end{DoxyEnumerate}
+\end{DoxyPostcond}
+\mbox{\Hypertarget{doxygen__example_8cpp_a06a9d1de937e4549cf0b75a0154abd5f}\label{doxygen__example_8cpp_a06a9d1de937e4549cf0b75a0154abd5f}} 
+\index{doxygen\_example.cpp@{doxygen\_example.cpp}!numberOfDigits@{numberOfDigits}}
+\index{numberOfDigits@{numberOfDigits}!doxygen\_example.cpp@{doxygen\_example.cpp}}
+\doxysubsubsection{\texorpdfstring{numberOfDigits()}{numberOfDigits()}}
+{\footnotesize\ttfamily int number\+Of\+Digits (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+Compute and return the number of digits in a positive integer. The style used for the pre/post coditions of this function is purposely different from that for the void function given above, just so you can see the differnce in the HTML output. \begin{DoxyReturn}{Returns}
+The number of digits in n. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & An integer, the number of whose digits is desired. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+n contains a positive integer. This is some other precondition, and note that it does not start on a new line. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The number of digits in n has been returned. ~\newline
+ This is some other post condition, and note that it does start on a new line. 
+\end{DoxyPostcond}
